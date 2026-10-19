@@ -1,16 +1,27 @@
-Week 7 lab link:
+Week 7 Lab
+
 https://abdallah-tah.github.io/cos452-abdallah/week07/
 
-Part (a): The canvas aspect ratio is calculated again in render(). The line
-orthographic(-aspect, aspect, -1, 1) makes the visible world wider on a wide
-canvas, so the square keeps its shape when the window is resized.
+Part (a) - Projection
+I calculate the canvas aspect ratio in render() and use
+orthographic(-aspect, aspect, -1, 1). This keeps the squares from
+looking stretched when I resize the window.
 
-Part (d): I think moving the world instead of the camera is a little
-confusing at first. Moving the world makes more sense when I think about
-the view matrix. If the camera moves right, the world moves left. It
-reminds me of cutting the back of my hair using a mirror. Left and right
-can feel opposite, so I have to think the other way. In a game, it is
-easier for me to think about the camera moving with the player. That is
-why I used -cx and -cy so the arrow keys work the way I expect.
+Part (b) - Camera pan
+I use cx and cy to move the camera with the arrow keys. I use -cx
+and -cy because when the camera moves right, the world moves left.
+This was confusing at first. It reminds me of cutting the back of
+my hair using a mirror, where left and right can feel opposite.
 
-Controls: Arrow keys pan the camera. + zooms in, and - zooms out.
+Part (c) - Camera zoom
+I use scaling(zoom, zoom) to zoom in and out and combine it with
+translation(-cx, -cy) so the zoom stays around the camera center.
+The + key zooms in, and the - key zooms out.
+
+Part (d) - Second square
+I added a second square using leftModel and rightModel. Each square has
+its own position, but both use the same buffer, projection, and view.
+I update the MVP matrix and draw each square separately.
+
+Controls:
+Arrow keys move the camera. + zooms in, and - zooms out.
