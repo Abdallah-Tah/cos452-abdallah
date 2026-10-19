@@ -2,26 +2,19 @@ Week 7 Lab
 
 https://abdallah-tah.github.io/cos452-abdallah/week07/
 
-Part (a) - Projection
-I calculate the canvas aspect ratio in render() and use
+(a): I calculate the canvas aspect ratio in render() and use
 orthographic(-aspect, aspect, -1, 1). This keeps the squares from
 looking stretched when I resize the window.
 
-Part (b) - Camera pan
-I use cx and cy to move the camera with the arrow keys. I use -cx
+(b): I use cx and cy to move the camera with the arrow keys. I use -cx
 and -cy because when the camera moves right, the world moves left.
 This was confusing at first. It reminds me of cutting the back of
 my hair using a mirror, where left and right can feel opposite.
 
-Part (c) - Camera zoom
-I use scaling(zoom, zoom) to zoom in and out and combine it with
+(c): I use scaling(zoom, zoom) to zoom in and out and combine it with
 translation(-cx, -cy) so the zoom stays around the camera center.
 The + key zooms in, and the - key zooms out.
 
-Part (d) - Second square
-I added a second square using leftModel and rightModel. Each square has
+(d): I added a second square using leftModel and rightModel. Each square has
 its own position, but both use the same buffer, projection, and view.
 I update the MVP matrix and draw each square separately.
-
-Controls:
-Arrow keys move the camera. + zooms in, and - zooms out.
