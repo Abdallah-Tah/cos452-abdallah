@@ -1,0 +1,14 @@
+Week 8 Lab
+
+Link:
+https://abdallah-tah.github.io/cos452-abdallah/week08/
+
+When I commented out gl.enable(gl.DEPTH_TEST), the cube looked something wrong, 
+like I could see inside it. The faces in the back covered the faces in front. 
+I turned depth testing back on so the closer faces show correctly.
+
+I changed the field of view from 50 to 35 degrees. The cube looks bigger, 
+like I zoomed in. The smaller angle shows less of the scene.
+
+I changed the six faces to different colors: light blue, green, white, 
+red, yellow, and black.
