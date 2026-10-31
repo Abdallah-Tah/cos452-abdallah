@@ -1,0 +1,12 @@
+Week 9 Lab
+
+Link:
+https://abdallah-tah.github.io/cos452-abdallah/week09/
+
+I used the image gratisography-dog-vacation.jpg for my texture.
+When I disabled UNPACK_FLIP_Y_WEBGL, the image was upside down. 
+I enabled it again to fix the image direction. I tested REPEAT and CLAMP_TO_EDGE. 
+REPEAT showed the dog picture four times, while CLAMP_TO_EDGE extended the colors 
+at the edges. NEAREST made the image look blocky, and LINEAR made it look smoother. 
+I used REPEAT and LINEAR for my final settings.
+
