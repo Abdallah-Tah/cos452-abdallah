@@ -1,0 +1,15 @@
+Week 10 Lab
+
+Link:
+https://abdallah-tah.github.io/cos452-abdallah/week10/
+
+When I changed the light to the right, one face got brighter and the other looked dark.
+The right face is brightest when it faces the light. 
+
+When I set ambient to 0.0, faces away from the light looked black.
+At 1.0, all the faces looked bright and the shading was gone.
+I used 0.15 so the dark faces are still visible.
+
+When I used v_normal = a_normal, one side stayed bright as the cube turned.
+The normal stayed in model space, but the light was in world space.
+I put the model matrix back so the normal turns with the cube.
